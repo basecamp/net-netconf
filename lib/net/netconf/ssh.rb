@@ -51,7 +51,7 @@ module Netconf
     end
 
     def trans_receive
-      @trans[:rx_buf] = ''
+      @trans[:rx_buf] = +''
       @trans[:more] = true
 
       # collect the response data as it comes back ...

@@ -13,14 +13,14 @@ Gem::Specification.new do |s|
   s.email = 'dgjnpr@gmail.com'
   s.files = FileList['lib/net/**/*.rb', 'examples/**/*.rb']
   s.required_ruby_version = '>= 2.1.0'
-  s.add_runtime_dependency('nokogiri', '~> 1.7')
-  s.add_runtime_dependency('net-ssh', '~> 4.1')
-  s.add_runtime_dependency('net-scp', '~> 1.2')
-  s.add_development_dependency('rake', '~> 12.0')
-  s.add_development_dependency('simplecov', '~> 0.14')
+  s.add_runtime_dependency('nokogiri')
+  s.add_runtime_dependency('net-ssh')
+  s.add_runtime_dependency('net-scp')
+  s.add_development_dependency('rake')
+  s.add_development_dependency('simplecov')
   s.add_development_dependency('codeclimate-test-reporter', '~> 1.0')
   # s.add_development_dependency('rspec-core', '~> 3.5')
   # s.add_development_dependency('rspec-expectations', '~> 3.5')
-  s.add_development_dependency('cucumber', '~> 2.4')
-  s.add_development_dependency('rubocop', '~> 0.48')
+  s.add_development_dependency('cucumber')
+  s.add_development_dependency('rubocop')
 end

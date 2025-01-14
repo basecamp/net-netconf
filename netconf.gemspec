@@ -1,5 +1,4 @@
 $LOAD_PATH.unshift 'lib'
-require 'rake'
 require 'net/netconf/version'
 
 Gem::Specification.new do |s|
@@ -11,7 +10,7 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/Juniper/net-netconf'
   s.authors = ["Jeremy Schulman", "Ankit Jain", "David Gethings"]
   s.email = 'dgjnpr@gmail.com'
-  s.files = FileList['lib/net/**/*.rb', 'examples/**/*.rb']
+  s.files = Dir['lib/net/**/*.rb', 'examples/**/*.rb']
   s.required_ruby_version = '>= 2.1.0'
   s.add_runtime_dependency('nokogiri')
   s.add_runtime_dependency('net-ssh')

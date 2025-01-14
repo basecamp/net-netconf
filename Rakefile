@@ -1,5 +1,6 @@
 begin
   require 'cucumber'
+  require 'rake'
   require 'cucumber/rake/task'
 
   Cucumber::Rake::Task.new(:features) do |t|
